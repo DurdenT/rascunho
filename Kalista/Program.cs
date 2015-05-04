@@ -31,12 +31,6 @@ namespace Kalista
             SpellQueue.Initialize();
             SoulBoundSaver.Initialize();
 
-            // Enable damage indicators
-            Utility.HpBarDamageIndicator.DamageToUnit = Damages.GetTotalDamage;
-            Utility.HpBarDamageIndicator.Enabled = true;
-
-            // Enable E damage indicators
-            CustomDamageIndicator.Initialize(Damages.GetRendDamage);
 
             // Listen to additional events
             Game.OnUpdate += Game_OnGameUpdate;
