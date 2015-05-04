@@ -118,9 +118,6 @@ namespace Kalista
                     Render.Circle.DrawCircle(player.Position, entry.Value.Value.Radius, entry.Value.Value.Color);
             }
 
-            // E damage on healthbar
-            CustomDamageIndicator.DrawingColor = Config.CircleLinks["drawDamageE"].Value.Color;
-            CustomDamageIndicator.Enabled = Config.CircleLinks["drawDamageE"].Value.Active;
 
             // Flee position the player moves to
             if (ActiveModes.fleeTargetPosition.HasValue)
